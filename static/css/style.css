@@ -1,0 +1,75 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: green;
+}
+
+.photo-area {
+    margin-top:20px;
+}
+
+.photo-card {
+    width: auto;
+    border-radius:0px;
+}
+.dropdown{
+    padding-top: 0.1rem;
+}
+.btn-articles, .btn-articles:hover, .btn-articles:focus , .btn-articles:active,
+.btn-articles:not(:disabled):not(.disabled).active, 
+.btn-articles:not(:disabled):not(.disabled):active, 
+.show>.btn-articles.dropdown-toggle{
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none !important;
+}
+.dropdown-menu.show{
+    top:45px;
+}
+.photo-background{
+    background: #000;    
+    margin-left: 0px; 
+    text-align: center;
+
+}
+.photo-card-row{
+    background: #000;    
+    margin-left: 0px; 
+    margin-right: 0px; 
+    text-align: center;
+
+}
+.photo-card  .photo-card-row .card-img-top{
+    margin: 0px auto;
+    border-radius: 0px; 
+    max-width: 228px; 
+    max-height: 200px; 
+    background: #3a6f9a;
+}
+
+.card-body{
+    border-top:1px solid #ccc;
+    background:#eee;
+}
+@media only screen and  (max-width:768px){
+  .card-body{
+      background: red;
+  }
+  .btn-articles{
+      padding-left: 0px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .card-body {
+        background: yellow;
+        height: 100px;
+    }
+    .card-img-top{
+        height: 200px;
+    }
+
+}

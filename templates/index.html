@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class = "jumbotron text-center">
+    <h3>BK Blog Sayfasına Hoşgeldiniz</h3>
+    <p>Bu blogta Diego Rodríguez de Silva y Velázquez'in hayatını ve eserlerini inceleyeceğiz.</p>
+
+</div>
+<div class="section">
+    <div class="container">
+      
+        <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top" src="https://www.pivada.com/content/images/thumbs/000/0007115.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Emmaus’ta Akşam Yemeği</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top"  src="https://www.pivada.com/content/images/thumbs/000/0007116.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Velázquez</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area  ">
+            <div class="card photo-card">
+                <div  class="photo-card-row">
+                   <img class="card-img-top"  src="https://www.pivada.com/content/images/thumbs/000/0006517_228.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Francisco Pacheco</a>
+                </div>
+              </div>
+        </div>    
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area ">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top " src="https://www.pivada.com/content/images/thumbs/000/0006348_228.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Infanta Margarita Teresa</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area ">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top"  src="https://www.pivada.com/content/images/thumbs/000/0006515_228.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Sibyl</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area ">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top"  src="https://www.pivada.com/content/images/thumbs/000/0006513_228.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">IV. Felipe</a>
+                </div>
+              </div>
+        </div>    
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area ">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top"  src="https://www.pivada.com/content/images/thumbs/000/0006510_228.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Kraliçe Isabel de Borbón</a>
+                </div>
+              </div>
+        </div>    
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 photo-area ">
+            <div class="card photo-card">
+                <div class="photo-card-row">
+                   <img class="card-img-top " src="https://www.pivada.com/content/images/thumbs/000/0006511_228.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <a href="#" class="">Prens Baltasar Carlos</a>
+                </div>
+              </div>
+        </div>    
+        </div>
+    </div>
+  </div>
+<ul>
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Title: {{article.title}}- Content: {{article.content}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock  %}
